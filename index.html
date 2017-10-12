@@ -1,10 +1,179 @@
 <!DOCTYPE html>
 <html>
-   <head>
-      <title>Saswat Arabinda | SDE 1</title>
-      <link rel="stylesheet" type="text/css" href="styles/homepage.css" />
-   </head>
-   <body>
-     Hello World
-   </body>
+
+<head>
+    <title>Utkal tourism</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/homepage.css" />
+    <script type="text/javascript" src="scripts/homepage.js"></script>
+</head>
+
+<body>
+    <!-- Nav bar starts here -->
+    <div id="page-wrapper">
+        <div id="title">Sidebar Interaction</div>
+    </div>
+    <div id="btn">
+        <div id='top'></div>
+        <div id='middle'></div>
+        <div id='bottom'></div>
+    </div>
+    <div id="box">
+        <div id="items">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+        </div>
+    </div>
+    <!-- Nav bar ends here -->
+    <!-- Masthead with image as banner starts here -->
+    <header class="masthead bg-photo">
+        <div class="col-md-12 headerwrap nopadding">
+            <div class="row header"></div>
+        </div>
+    </header>
+    <!-- Masthead with image as banner ends here -->
+    <!-- Masthead with carousel as banner starts here-->
+    <div class="container">
+        <!--   <h2>Carousel Example</h2> -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="https://www.w3schools.com/bootstrap/la.jpg" alt="Los Angeles" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>Los Angeles</h3>
+                        <p>LA is always so much fun!</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://www.w3schools.com/bootstrap/chicago.jpg" alt="Chicago" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>Chicago</h3>
+                        <p>Thank you, Chicago!</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://www.w3schools.com/bootstrap/ny.jpg" alt="New York" style="width:100%;">
+                    <div class="carousel-caption">
+                        <h3>New York</h3>
+                        <p>We love the Big Apple!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+      </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+      </a>
+        </div>
+    </div>
+    <!-- Masthead with carousel as banner ends here-->
+    <main>
+        <div class="card-container">
+            <div class="card js-experiment-visualizer">
+                <div class="card-content">
+                    <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </h3>
+                </div>
+                <div class="card-content link-spacing">
+                    <a href="#" data-track-link="home-watch-keynote">
+            Lorem Ipsum is simply 
+            </a>
+                </div>
+            </div>
+        </div>
+        <div class="card-container">
+            <div class="card js-experiment-visualizer">
+                <div class="card-content">
+                    <ngui-map class="mapDesign" [options]="allOptions" center="20.9517, 85.0985">
+                        <marker *ngFor="let pos of positions" [position]="pos.location" [title]="pos.name" (click)="markerClick($event)"></marker>
+                    </ngui-map>
+                    <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</h3>
+                </div>
+                <div class="card-content link-spacing">
+                    <a href="#" data-track-link="home-watch-keynote">
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </a>
+                </div>
+            </div>
+        </div>
+        <div style="position: relative; margin-top: 310px;">
+            <div class="card-container" style="    position: absolute;top: 0;bottom: 0;left: 0;right: 0;z-index: 1;margin-top: -134px;">
+                <div class="card js-experiment-visualizer">
+                    <div class="card-content">
+                        <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+               </h3>
+                    </div>
+                    <div class="card-content link-spacing">
+                        <a href="#" data-track-link="home-watch-keynote">
+               Lorem Ipsum is simply 
+               </a>
+                    </div>
+                </div>
+            </div>
+            <div class="pics-section">
+                <div class="photo-about">
+                    <div class="photo-about-left-img" placeholder=""></div>
+                </div>
+                <div class="photo-about-vertical">
+                    <div class="photo-about-top">
+                        <div class="photo-about-top-img" placeholder=""></div>
+                    </div>
+                    <div class="photo-about-bottom">
+                        <div class="photo-about-bottom-img" placeholder=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card-container sidebyside">
+                <div class="card auto-vertical flex">
+                    <div class="card-content" style="min-height: 200px;">
+                        <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. orem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+                    </div>
+                    <div class="card-content">
+                        <a href="videos" data-track-link="about-see-keynote-and-sessions">Lorem Ipsum is simply dummy text
+               </a>
+                    </div>
+                </div>
+                <div class="card auto-vertical flex">
+                    <div class="flex card__photo card__photo--recap"></div>
+                    <div class="card-content">
+                        <img src="https://cdn2.iconfinder.com/data/icons/media-and-navigation-buttons-round/512/Button_3-512.png" class="play__button play__button--card" alt="Play video">
+                        <span class="anchor-like" role="link" tabindex="0">Lorem Ipsum is simply dummy text</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ngui-map class="mapDesign map-banner" [options]="allOptions">
+            <marker *ngFor="let pos of positions" [position]="pos.location" [title]="pos.name" (click)="markerClick($event)"></marker>
+        </ngui-map>
+        <div class="card-container">
+            <div class="card js-experiment-visualizer">
+                <div class="card-content">
+                    <h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h3>
+                </div>
+                <div class="card-content link-spacing">
+                    <a href="#" data-track-link="home-watch-keynote">
+            WLorem Ipsum is simply dummy text of the printing and 
+            </a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
 </html>
