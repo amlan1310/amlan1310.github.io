@@ -3,16 +3,172 @@
 
 <head>
     <title>Utkal tourism</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="blog/Blog _ GoExplore! Travel Website Template_files/bootstrap.min.css" media="screen">
     <link rel="stylesheet" type="text/css" href="styles/homepage.css" />
     <script type="text/javascript" src="scripts/homepage.js"></script>
 </head>
 
 <body>
+    <!-- Navigation (main menu)
+        ================================================== -->
+
+        <div class="navbar-wrapper">
+            <header class="navbar navbar-default navbar-fixed-top" id="MainMenu">
+                <div class="navbar-extra-top clearfix">
+                    <div class="navbar container-fluid">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li class="menu-item"><a href="#"><i class="fa fa-envelope"></i> Contact Us</a></li>
+                            <li class="menu-item"><a href="#"><i class="fa fa-suitcase"></i> Join the Explorers!</a></li>
+                            <li class="menu-item"><a href="#"><i class="fa fa-sign-in"></i> Sign in</a></li>
+                        </ul>
+                        <div class="navbar-top-right">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a href="#"><i class="fa fa-facebook fa-fw"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus fa-fw"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter fa-fw"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram fa-fw"></i></a></li>
+                            </ul>
+                            <form class="navbar-form navbar-right navbar-search" role="search" action="#">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                </div>
+                                <button type="submit" class="btn btn-default"><span class="fa fa-search"></span></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid collapse-md" id="navbar-main-container">
+                    <div class="navbar-header">
+                        <a href="#" class="navbar-brand"><img alt="GoExplore!" src="./Blog _ GoExplore! Travel Website Template_files/logo.png"><span class="sr-only">&nbsp; GoExplore!</span></a>
+                        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+
+                    <nav class="navbar-collapse collapse" id="navbar-main">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="dropdown show-on-hover">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Destinations</a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown-submenu show-on-hover">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Africa</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Algeria</a></li>
+                                            <li><a href="#">Cape Verde</a></li>
+                                            <li><a href="#">Egypt</a></li>
+                                            <li><a href="#">Ghana</a></li>
+                                            <li><a href="#">Kenya</a></li>
+                                            <li><a href="#">Morocco</a></li>
+                                            <li><a href="#">South Africa</a></li>
+                                            <li><a href="#">Uganda</a></li>
+                                            <li><a href="#">Western Sahara</a></li>
+                                            <li><a href="#">Zambia</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu show-on-hover">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Asia</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Bhutan</a></li>
+                                            <li><a href="#">Cambodia</a></li>
+                                            <li><a href="#">China</a></li>
+                                            <li><a href="#">India</a></li>
+                                            <li><a href="#">Japan</a></li>
+                                            <li><a href="#">Malaysia</a></li>
+                                            <li><a href="#">Nepal</a></li>
+                                            <li><a href="#">Singapore</a></li>
+                                            <li><a href="#">Thailand</a></li>
+                                            <li><a href="#">Vietnam</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu show-on-hover">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Canada</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Alberta</a></li>
+                                            <li><a href="#">British Columbia</a></li>
+                                            <li><a href="#">Montréal</a></li>
+                                            <li><a href="#">Nova Scotia</a></li>
+                                            <li><a href="#">Ontario</a></li>
+                                            <li><a href="#">Québec</a></li>
+                                            <li><a href="#">Toronto</a></li>
+                                            <li><a href="#">Vancouver</a></li>
+
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu show-on-hover">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Central America </a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Belize</a></li>
+                                            <li><a href="#">Costa Rica</a></li>
+                                            <li><a href="#">El Salvador</a></li>
+                                            <li><a href="#">Guatamala</a></li>
+                                            <li><a href="#">Honduras</a></li>
+                                            <li><a href="#">Nicaragua</a></li>
+                                            <li><a href="#">Panama</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown-submenu show-on-hover">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Europe</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Belgium</a></li>
+                                            <li><a href="#">Denmark</a></li>
+                                            <li><a href="#">France</a></li>
+                                            <li><a href="#">Greece</a></li>
+                                            <li><a href="#">Ireland</a></li>
+                                            <li><a href="#">Sweden</a></li>
+                                            <li><a href="#">Spain</a></li>
+                                            <li><a href="#">Ukraine</a></li>
+                                            <li><a href="#">United Kingdom</a></li>
+                                        </ul>
+                                    </li>
+
+                                    <li class="dropdown-submenu show-on-hover">
+                                        <a class="dropdown-toggle" data-toggle="dropdown" href="#">United States</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="#">Alaska</a></li>
+                                            <li><a href="#">California</a></li>
+                                            <li><a href="#">Florida</a></li>
+                                            <li><a href="#">Georgia</a></li>
+                                            <li><a href="#">Hawaii</a></li>
+                                            <li><a href="#">New York</a></li>
+                                            <li><a href="#">Nevada</a></li>
+                                            <li><a href="#">Texas</a></li>
+                                            <li><a href="#">Utah</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li class="dropdown show-on-hover">
+                                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Explore</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Adventure</a></li>
+                                    <li><a href="#">Beaches</a></li>
+                                    <li><a href="#">City Life</a></li>
+                                    <li><a href="#">Culture &amp; History</a></li>
+                                    <li><a href="#">Family Fun</a></li>
+                                    <li><a href="#">Mountains</a></li>
+                                    <li><a href="#">Off the Beaten Path</a></li>
+                                    <li><a href="#">Stunning Vistas</a></li>
+                                </ul>
+                            </li>
+
+                            <li><a href="package/index.htm">Package</a></li>
+                            <li><a href="blog/index.htm">Blog</a></li>
+                        </ul>
+                    </nav>
+                </div><!-- /.container-fluid -->
+            </header>
+        </div><!-- /.navbar-wrapper -->
+
     <!-- Nav bar starts here -->
-    <div id="page-wrapper">
+<!--     <div id="page-wrapper">
         <div id="title">Sidebar Interaction</div>
     </div>
     <div id="btn">
@@ -22,13 +178,13 @@
     </div>
     <div id="box">
         <div id="items">
-            <div class="item">Item 1</div>
-            <div class="item">Item 2</div>
-            <div class="item">Item 3</div>
+            <div class="item"><a href="#">Home</a></div>
+            <div class="item"><a href="package/index.htm">Package</a></div>
+            <div class="item"><a href="blog/index.htm">Blog</a></div>
             <div class="item">Item 4</div>
             <div class="item">Item 5</div>
         </div>
-    </div>
+    </div> -->
     <!-- Nav bar ends here -->
     <!-- Masthead with image as banner starts here -->
     <header class="masthead bg-photo">
